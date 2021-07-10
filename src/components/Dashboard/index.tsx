@@ -1,4 +1,4 @@
-
+import { Form } from '../Form'
 import { Container } from './styles'
 
 export function Dashboard() {
@@ -18,7 +18,7 @@ export function Dashboard() {
       </div>
       <div className="center-column"></div>
       <div className="right-container">
-        
+        <Form />
       </div>
     </Container>
   )
