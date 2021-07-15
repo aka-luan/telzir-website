@@ -33,6 +33,8 @@ export class Form extends React.Component<{}, FormState> {
     }
   }
 
+  
+
   handleInputChange = (event: { target: { name: any, value: any } }) => {
     const name = (event.target as HTMLInputElement).name
     const value = (event.target as HTMLInputElement).value
@@ -83,6 +85,12 @@ export class Form extends React.Component<{}, FormState> {
     newState.tarifaPadrao = ((minutos * tarifa)).toFixed(2).toString()
     newState.tarifaFaleMais = Math.max(0, ((((minutos - plano) * tarifa) * 1.1))).toFixed(2).toString()
 
+    if (isNaN(parseInt(newState.tarifaPadrao))) {
+      console.log(newState)
+      newState.tarifaPadrao = '-'
+      newState.tarifaFaleMais = '-'
+    }    
+
     this.setState({
       formData: newState,
       formStyles: {
@@ -97,7 +105,6 @@ export class Form extends React.Component<{}, FormState> {
       }
     })
 
-    console.log(this.state.formData)
     event.preventDefault()
   }
 
