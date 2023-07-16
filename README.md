@@ -1,17 +1,65 @@
-# telzir-website
+# Telzir Website
 
-Esse aplicativo responsivo em React com Typescript é a página inicial de um site de telefonia chamado Telzir.
-A página possui um componente Form em que é possível que o cliente calcule o valor da ligação e verifique o valor da tarifa telefonica com e sem o seu produto (FaleMais).
+Welcome to the Telzir Website project! This is a React application built with TypeScript, providing a user-friendly interface for Telzir's services. The application is built using modern React features such as Hooks, and it uses Styled Components for styling. Tests are written using the React Testing Library.
 
-Para inicializar o app, basta baixa o código fonte, baixar as dependencias (npm install --legacy-peer-deps ou yarn) e iniciar com um npm start (yarn start). Para realizar os testes, um npm test(ou yarn test)
+## Features
 
+- User-friendly dashboard
+- Form for user input
+- Responsive header
+- Custom styles and assets
+- Modern React features like Hooks
+- Styled Components for styling
+- Tests with React Testing Library
 
- 
-Bibliotecas utilizadas
----------------------------
+## Getting Started
 
-* reactJS
-* typescript
-* react hooks
-* react-testing-library
-* styled-components
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Node.js
+- Yarn
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/aka-luan/telzir-website.git
+   ```
+2. Navigate into the cloned repository:
+   ```
+   cd telzir-website
+   ```
+3. Install the dependencies:
+   ```
+   yarn install
+   ```
+4. Start the server:
+   ```
+   yarn start
+   ```
+
+## Running the Tests
+
+To run the automated tests for this system, use the following command:
+
+```
+yarn test
+```
+
+## Built With
+
+- [React](https://reactjs.org/) - The web framework
+- [TypeScript](https://www.typescriptlang.org/) - The programming language
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html) - For state management and side effects
+- [Styled Components](https://styled-components.com/) - For component-level styling
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - For testing the components
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
